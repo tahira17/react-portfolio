@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { HiOutlineMail } from "react-icons/hi";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
