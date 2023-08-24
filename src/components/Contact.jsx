@@ -35,12 +35,12 @@ const Contact = () => {
           console.log(result.text, result.status);
           // clearState();
           handleClickToOpen();
-          dialogboxmsg="Success"
+          // dialogboxmsg="Success"
         },
         (error) => {
           console.log(error.text);
           handleClickToOpen();
-          dialogboxmsg="Failed"
+          // dialogboxmsg="Failed"
         }
       );
   };
@@ -89,9 +89,9 @@ const Contact = () => {
       </div>
 
       {/* Dialog Box */}
-      <Dialog open={open} onClose={handleToClose}>
-        <DialogTitle >{dialogboxHeader}</DialogTitle>
-        <DialogContent>
+      <Dialog  open={open} onClose={handleToClose}>
+        <DialogTitle >Message</DialogTitle>
+        <DialogContent style={{height:'80px' , width :'0px'}} >
           <DialogContentText>Email sent Successfully.</DialogContentText>
         </DialogContent>
         <DialogActions>
