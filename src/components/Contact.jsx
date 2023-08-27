@@ -6,7 +6,8 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
+import { Button } from "react-scroll";
+
 
 const Contact = () => {
   const [open, setOpen] = React.useState(false);
@@ -39,50 +40,50 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-          handleClickToOpen();
+         
           // dialogboxmsg="Failed"
         }
       );
   };
   return (
     <div>
-      <div
+      <div 
         name="contact"
-        className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+        className="w-full h-screen bg-footer_pattern bg-bottom bg-no-repeat flex justify-center items-center p-4"
       >
-        <form
+        <form data-aos="zoom-in"
           className="flex flex-col max-w-[600px] w-full"
-          // onSubmit={sendemail}
+          onSubmit={sendemail}
           ref={form}
         >
           <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-purple-500 text-gray-300">
+            <p className="text-4xl font-bold inline border-b-4 border-purple-500 text-gray-500">
               Contact
             </p>
             <p className="text-gray-300 py-4"></p>
           </div>
           <input
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#aaedf2] p-2"
             type="text"
-            placeholder="Enter yout name"
+            placeholder="Enter your name"
             required
             name="name"
           />
           <input
-            className="my-4 p-2 bg-[#ccd6f6]"
+            className="my-4 p-2 bg-[#aaedf2]"
             type="email"
             placeholder="Enter your email"
             required
             name="email"
           />
           <textarea
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#aaedf2] p-2"
             name="message"
             rows="10"
             placeholder="Message"
             required
           ></textarea>
-          <button onClick={handleClickToOpen} className="text-white border-2 hover:bg-purple-500 hover:border-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
+          <button className="text-white border-2 bg-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
             Let's Collaborate
           </button>
         </form>
@@ -91,13 +92,13 @@ const Contact = () => {
       {/* Dialog Box */}
       <Dialog  open={open} onClose={handleToClose}>
         <DialogTitle >Message</DialogTitle>
-        <DialogContent style={{height:'80px' , width :'0px'}} >
+        <DialogContent style={{height:'58px' , width :'400px'}} >
           <DialogContentText>Email sent Successfully.</DialogContentText>
         </DialogContent>
         <DialogActions>
-          <button onClick={handleToClose} className="border-2 hover:bg-purple-500 hover:border-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
+          <Button  className="border-2 hover:bg-purple-500 hover:border-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
             OK
-          </button>
+          </Button>
         </DialogActions>
       </Dialog>
     </div>

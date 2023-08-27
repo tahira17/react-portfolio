@@ -9,7 +9,9 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleclick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+
+    <div className="fixed w-full h-[80px] flex justify-between bg-[#61d4dc] items-center px-4  text-gray-500">
+
       {/* Menu */}
 
       <ul className="hidden md:flex">
@@ -56,7 +58,7 @@ const NavBar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -92,7 +94,7 @@ const NavBar = () => {
       </ul>
 
       {/* Social Icons  */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 ">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
@@ -128,7 +130,9 @@ const NavBar = () => {
           </li> */}
         </ul>
       </div>
+   
     </div>
+
   );
 };
 
