@@ -34,22 +34,20 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text, result.status);
-          // clearState();
+         
           handleClickToOpen();
-          // dialogboxmsg="Success"
+
         },
         (error) => {
           console.log(error.text);
          
-          // dialogboxmsg="Failed"
+        
         }
       );
   };
   return (
     <div>
-      <div 
-        name="contact"
-        className="w-full h-screen bg-footer_pattern bg-bottom bg-no-repeat flex justify-center items-center p-4"
+      <div  name="contact"  className="w-full h-screen bg-footer_pattern bg-bottom bg-no-repeat flex justify-center items-center p-4"
       >
         <form data-aos="zoom-in"
           className="flex flex-col max-w-[600px] w-full"
@@ -57,33 +55,33 @@ const Contact = () => {
           ref={form}
         >
           <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-purple-500 text-gray-500">
+            <p className="text-4xl font-bold inline border-b-4 border-[#27b59f] text-gray-900">
               Contact
             </p>
             <p className="text-gray-300 py-4"></p>
           </div>
           <input
-            className="bg-[#aaedf2] p-2"
+            className="bg-[#40beab] p-2"
             type="text"
             placeholder="Enter your name"
             required
             name="name"
           />
           <input
-            className="my-4 p-2 bg-[#aaedf2]"
+            className="my-4 p-2 bg-[#40beab]"
             type="email"
             placeholder="Enter your email"
             required
             name="email"
           />
           <textarea
-            className="bg-[#aaedf2] p-2"
+            className="bg-[#40beab] p-2"
             name="message"
             rows="10"
             placeholder="Message"
             required
           ></textarea>
-          <button className="text-white border-2 bg-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
+          <button className="text-white border-2 bg-[#27b59f] px-4 py-3 my-8 mx-auto flex items-center">
             Let's Collaborate
           </button>
         </form>
@@ -96,7 +94,7 @@ const Contact = () => {
           <DialogContentText>Email sent Successfully.</DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button  className="border-2 hover:bg-purple-500 hover:border-purple-500 px-4 py-3 my-8 mx-auto flex items-center">
+          <Button  className="border-2 hover:bg-[#27b59f] px-4 py-3 my-8 mx-auto flex items-center">
             OK
           </Button>
         </DialogActions>
