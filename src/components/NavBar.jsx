@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const NavBar = () => {
@@ -62,30 +62,30 @@ const NavBar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-2 sm:space-x-0 sm:space-y-0 md:space-y-0">
-                <li className="text-white ">
+              <ul className="items-center justify-center space-x-40 space-y-8 md:flex md:space-x-2 sm:space-x-0 sm:space-y-0 md:space-y-0">
+              <li className="text-white" >
+                  {/* <Link to="about" smooth={true} duration={500}>
+                    About
+                  </Link> */}
+                </li>
+                <li className="text-white" >
                   <Link to="home" smooth={true} duration={500}>
                     Home
                   </Link>
                 </li>
-                <li className="text-white" >
-                  <Link to="about" smooth={true} duration={500}>
+                <li className="text-white ">
+                <Link to="about" smooth={true} duration={500}>
                     About
                   </Link>
                 </li>
-                <li className="text-white ">
-                  <Link to="skills" smooth={true} duration={500}>
+                <li>
+                <Link to="skills" smooth={true} duration={500}>
                     Skills
-                  </Link>
-                </li>
+                  </Link></li>
                 <li>
                 <Link to="work" smooth={true} duration={500}>
                   Work
-                </Link></li>
-                <li>
-                  <Link to="contact" smooth={true} duration={500}>
-                    Contact
-                  </Link>
+                </Link>
                 </li>
               </ul>
 
@@ -98,7 +98,7 @@ const NavBar = () => {
       {/* hero section */}
 
       {/* Social Icons  */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 ">
+      <div className="fixed flex-col top-[25%] bottom-0 ">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
@@ -114,6 +114,15 @@ const NavBar = () => {
               href="https://github.com/tahira17"
             >
               GitHub <FaGithub size={30} />
+            </a>
+          </li>
+
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
+            <a 
+              className="flex justify-between items-center w-full text-gray-300"
+              href="mailto:tahiranawaz12345@gmail.com"
+            >
+              Mail <HiOutlineMail size={30} />
             </a>
           </li>
         </ul>
