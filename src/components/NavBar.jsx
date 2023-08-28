@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-import { FaGithub, FaLinkedin  } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
-
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -95,38 +91,8 @@ const NavBar = () => {
           <div className="hidden space-x-2 md:inline-block"></div>
         </div>
       </nav>
-      {/* hero section */}
-
-      {/* Social Icons  */}
-      <div className="fixed flex-col top-[25%] bottom-0 ">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/tahira-nawaz-6a0792130/"
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/tahira17"
-            >
-              GitHub <FaGithub size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
-            <a 
-              className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:tahiranawaz12345@gmail.com"
-            >
-              Mail <HiOutlineMail size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
+    
+     
     </div>
   );
 };

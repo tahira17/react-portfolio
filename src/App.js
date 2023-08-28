@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Skills from './components/Skills'
 import Work from './components/Work'
+import Contact from './components/Contact'
 import { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -21,6 +22,7 @@ function App() {
 <About />
 <Skills />
 <Work />
+<Contact />
 
     </div>
   );
