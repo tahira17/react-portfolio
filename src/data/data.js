@@ -20,10 +20,16 @@ export const data=[
     {
         id:3,
         name:"React JS Portfolio",
-    
         image:ReactPortfolio,
         github:"https://github.com/tahira17/react-portfolio",
         live:"",
+    },
+    {
+        id:4,
+        name:"Reactjs Landing Page",
+        image:ReactPortfolio,
+        github:"https://github.com/tahira17/React-Landing-Page",
+        live:"https://react-landing-page-olive.vercel.app/",
     },
 
 
