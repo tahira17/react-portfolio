@@ -1,55 +1,30 @@
-import WorkIm from '../assets/projects/workImg.jpeg'
-import RealEst from '../assets/projects/realestate.jpg'
 
+import VueportfolioImg from '../assets/projects/portfolio.png'
+import VueLandingPage from '../assets/projects/vuelandingpage.png'
+import ReactPortfolio from '../assets/projects/reactportfolio.png'
 export const data=[
     {
         id:1,
-        name:"React JS CodePen",
-        FrameWork:"React",
-        image:WorkIm,
-        github:"https://github.com/tahira17/codepen",
-        live:"",
+        name:"Vue Js Portfolio",
+        image:VueportfolioImg,
+        github:"https://github.com/tahira17/Portfolio",
+        live:"https://vue-js-portfolio.netlify.app/",
     },
     {
         id:2,
-        name:"React JS Portfolio",
-        FrameWork:"React",
-        image:RealEst,
-        github:"https://github.com/tahira17/react-portfolio",
-        live:"",
+        name:"Vuejs Landing Page",
+        image:VueLandingPage,
+        github:"https://github.com/tahira17/fe-test",
+        live:"https://frontend-d4-test.netlify.app/",
     },
     {
         id:3,
         name:"React JS Portfolio",
-        FrameWork:"React",
-        image:RealEst,
+    
+        image:ReactPortfolio,
         github:"https://github.com/tahira17/react-portfolio",
         live:"",
     },
-    {
-        id:4,
-        name:"React JS Portfolio",
-        FrameWork:"Vue",
-        image:RealEst,
-        github:"https://github.com/tahira17/react-portfolio",
-        live:"",
-    },
-    {
-        id:5,
-        name:"React JS Portfolio",
-        FrameWork:"Vue",
-        image:RealEst,
-        github:"https://github.com/tahira17/react-portfolio",
-        live:"",
-    },
-    {
-        id:6,
-        name:"React JS Portfolio",
-        FrameWork:"Vue",
-        image:RealEst,
-        github:"https://github.com/tahira17/react-portfolio",
-        live:"",
-    }
 
 
 ]
