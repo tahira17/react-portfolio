@@ -2,6 +2,7 @@
 import VueportfolioImg from '../assets/projects/portfolio.png'
 import VueLandingPage from '../assets/projects/vuelandingpage.png'
 import ReactPortfolio from '../assets/projects/reactportfolio.png'
+import reactlandingpage from '../assets/projects/reactlandingpage.png'
 export const data=[
     {
         id:1,
@@ -27,7 +28,7 @@ export const data=[
     {
         id:4,
         name:"Reactjs Landing Page",
-        image:ReactPortfolio,
+        image:reactlandingpage,
         github:"https://github.com/tahira17/React-Landing-Page",
         live:"https://react-landing-page-olive.vercel.app/",
     },
