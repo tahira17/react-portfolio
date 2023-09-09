@@ -83,6 +83,12 @@ const NavBar = () => {
                   Work
                 </Link>
                 </li>
+                <li>
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact
+                </Link>
+                </li>
+                
               </ul>
 
               <div className="mt-3 space-y-2 lg:hidden md:hidden sm:inline-block"></div>
