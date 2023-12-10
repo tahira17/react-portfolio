@@ -28,11 +28,11 @@ function App() {
 
     <AnimatedCursor
   color="180, 195, 227"
-  innerSize={10}
-  outerSize={15}
-  innerScale={10}
-  outerScale={0.7}
-  outerAlpha={0.5}
+  outerAlpha = {0.4}
+  innerSize = {8}
+  outerSize = {15}
+  outerScale = {5}
+  innerScale = {0.7}
 />
    
     </div>
