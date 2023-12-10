@@ -3,6 +3,7 @@ import VueportfolioImg from '../assets/projects/portfolio.png'
 import VueLandingPage from '../assets/projects/vuelandingpage.png'
 import ReactPortfolio from '../assets/projects/reactportfolio.png'
 import reactlandingpage from '../assets/projects/reactlandingpage.png'
+import reactCalculator from '../assets/projects/ReactCalculator.png'
 export const data=[
     {
         id:1,
@@ -31,6 +32,13 @@ export const data=[
         image:reactlandingpage,
         github:"https://github.com/tahira17/React-Landing-Page",
         live:"https://react-landing-page-olive.vercel.app/",
+    },
+    {
+        id:5,
+        name:"Reactjs Calculator",
+        image:reactCalculator,
+        github:"https://github.com/tahira17/react-calculator",
+        live:"https://react-js-calculator-demo.vercel.app/",
     },
 
 

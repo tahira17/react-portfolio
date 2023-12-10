@@ -5,18 +5,18 @@ const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div
-      className="text-white font-sans bg-[#27b59f]"
+      className="text-white font-sans bg-[#6155ae]"
       
     >
       {/* Nav Bar */}
 
-      <nav className="fixed top-0 z-10 w-full bg-[#27b59f]">
+      <nav className="fixed top-0 z-10 w-full bg-[#6155ae]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 sm:py-2 md:block">
               <div className="md:hidden">
                 <button
-                  className="p-2 text-[#27b59f] rounded-md outline-none focus:border-[#27b59f] focus:border"
+                  className="p-2 text-[#6155ae] rounded-md outline-none focus:border-[#6155ae] focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (

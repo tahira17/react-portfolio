@@ -7,10 +7,10 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full md:h-screen text-gray-900 bg-white">
+    <div name="work" className="w-full md:h-screen text-gray-900">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div data-aos="zoom-in" className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-900 border-[#27b59f]">
+          <p className="text-4xl font-bold inline border-b-4 text-gray-900 border-[#7162d0]">
             Work
           </p>
           <p className="py-6">Check out some of my recent work.</p>
@@ -26,8 +26,8 @@ const Work = () => {
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-lg shadow-[#27b59f] group container rounded-2xl 
-              flex justify-center text-center items-center mx-auto content-div hover:bg-[#27b59f] "
+              className="shadow-lg shadow-[#7162d0] group container rounded-2xl 
+              flex justify-center text-center items-center mx-auto content-div hover:bg-[#7162d0] "
             >
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 ">
@@ -39,7 +39,7 @@ const Work = () => {
                   <a href={item.github} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-[#27b59f] font-bold text-lg"
+                       bg-white text-[#7162d0] font-bold text-lg"
                     >
                       Code
                     </button>
@@ -48,7 +48,7 @@ const Work = () => {
                   <a href={item.live} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-[#27b59f] font-bold text-lg"
+                       bg-white text-[#7162d0] font-bold text-lg"
                     >
                       Live
                     </button>

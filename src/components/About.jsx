@@ -17,7 +17,7 @@ const About = () => {
             <p>Hi. I'm Tahira Nawaz, nice to meet you. Please take a look around.</p>
           </div>
           <div data-aos="zoom-in">
-            <p>I'm a Frontend engineer currently working with TeReSol , Islamabad since March, 2022 working on a web-based banking system, completing 14 use cases with Vue.js. Collaborating on design, implementing performant and accessible frontend functionality (HTML, CSS, JavaScript), and ensuring seamless integration with bank systems. Thorough testing guarantees reliability and security. Effective communication and issue resolution for high-quality solutions.
+            <p className='font-bold'>I'm a Frontend engineer currently working with TeReSol , Islamabad since March, 2022 working on a web-based banking system, completing 14 use cases with Vue.js. Collaborating on design, implementing performant and accessible frontend functionality (HTML, CSS, JavaScript), and ensuring seamless integration with bank systems. Thorough testing guarantees reliability and security. Effective communication and issue resolution for high-quality solutions.
             </p>  
           </div>
         </div>
