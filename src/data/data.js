@@ -4,6 +4,8 @@ import VueLandingPage from '../assets/projects/vuelandingpage.png'
 import ReactPortfolio from '../assets/projects/reactportfolio.png'
 import reactlandingpage from '../assets/projects/reactlandingpage.png'
 import reactCalculator from '../assets/projects/ReactCalculator.png'
+import MovieApp from '../assets/projects/Movie-app.png'
+
 export const data=[
     {
         id:1,
@@ -26,15 +28,22 @@ export const data=[
         github:"https://github.com/tahira17/react-portfolio",
         live:"",
     },
-    {
+       {
         id:4,
+        name:"React JS Movie App",
+        image:MovieApp,
+        github:"https://github.com/tahira17/MovieApp",
+        live:"https://reactjs-browser-movie-app.vercel.app/",
+    },
+    {
+        id:5,
         name:"Reactjs Landing Page",
         image:reactlandingpage,
         github:"https://github.com/tahira17/React-Landing-Page",
         live:"https://react-landing-page-olive.vercel.app/",
     },
     {
-        id:5,
+        id:6,
         name:"Reactjs Calculator",
         image:reactCalculator,
         github:"https://github.com/tahira17/react-calculator",
