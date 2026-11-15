@@ -18,7 +18,7 @@ export const data = [
     name: "Vuejs Landing Page",
     image: VueLandingPage,
     github: "https://github.com/tahira17/fe-test",
-    live: "https://frontend-d4-test.netlify.app/",
+    live: "https://vue-js-responsive-website.netlify.app/",
   },
   {
     id: 3,
